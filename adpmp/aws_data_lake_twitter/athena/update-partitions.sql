@@ -1,0 +1,1 @@
+msck repair table mba_data_lake_enriched;

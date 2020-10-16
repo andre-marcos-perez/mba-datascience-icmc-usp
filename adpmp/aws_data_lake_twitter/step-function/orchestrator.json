@@ -1,0 +1,51 @@
+{
+  "StartAt": "run mba-data-lake-raw",
+  "States": {
+    "run mba-data-lake-raw": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:sa-east-1:<aws-account-id>:function:mba-data-lake-raw",
+      "Next": "did raw work?"
+    },
+    "did raw work?": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.status",
+          "BooleanEquals": true,
+          "Next": "run mba-data-lake-enriched"
+        },
+        {
+          "Variable": "$.status",
+          "BooleanEquals": false,
+          "Next": "failed"
+        }
+      ]
+    },
+    "run mba-data-lake-enriched": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:sa-east-1:<aws-account-id>:function:mba-data-lake-enriched",
+      "Next": "did enriched work?"
+    },
+    "did enriched work?": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.status",
+          "BooleanEquals": true,
+          "Next": "success"
+        },
+        {
+          "Variable": "$.status",
+          "BooleanEquals": false,
+          "Next": "failed"
+        }
+      ]
+    },
+    "success": {
+      "Type": "Succeed"
+    },
+    "failed": {
+      "Type": "Fail"
+    }
+  }
+}

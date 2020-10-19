@@ -4,4 +4,4 @@
 
 ## Contents
 
-- **[1 - Twitter Data Pipeline](twitter-data-pipeline)**
+- **[1 - Twitter Data Lake](twitter-data-lake)**

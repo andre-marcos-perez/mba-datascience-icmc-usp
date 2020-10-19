@@ -6,7 +6,7 @@
 ## Contents
 
 - [**1 - ADPMP**](adpmp/)
-  - [1.1 - Twitter Data Pipeline](adpmp/twitter_data_pipeline/)
+  - [1.1 - Twitter Data Pipeline](adpmp/twitter-data-pipeline)
 - [**Appendix**](#appendix)
   - [A - Author](#a---author)
 

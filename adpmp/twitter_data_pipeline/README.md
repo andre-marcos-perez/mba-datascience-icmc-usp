@@ -11,10 +11,10 @@
 
 Source code for the **Twitter Data Pipeline** built on AWS cloud:
 
-- **ELT** with AWS Lambda
-- **Data Lake** with AWS s3
-- **Orchestration** with AWS Step Functions and AWS CloudWatch
-- **Exploratory Analysis** with AWS Athena and AWS GLue
+- **ELT** with AWS Lambda;
+- **Data Lake** with AWS s3;
+- **Orchestration** with AWS Step Functions and AWS CloudWatch;
+- **Exploratory Analysis** with AWS Athena and AWS GLue.
 
 ## 2. Built With
 

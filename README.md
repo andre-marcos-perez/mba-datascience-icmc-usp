@@ -5,8 +5,8 @@
 
 ## Contents
 
-- [**1 - ADPMP**](adpmp/README.md)
-  - [1.1 - Twitter Data Pipeline](adpmp/twitter_data_pipeline/README.md)
+- [**1 - ADPMP**](adpmp/)
+  - [1.1 - Twitter Data Pipeline](adpmp/twitter_data_pipeline/)
 - [**Appendix**](#appendix)
   - [A - Author](#a---author)
 

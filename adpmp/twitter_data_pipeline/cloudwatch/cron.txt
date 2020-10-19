@@ -1,0 +1,4 @@
+# Triggers at 06:00h every day/week/year
+# See: https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/ScheduledEvents.html
+
+0 6 * * ? *

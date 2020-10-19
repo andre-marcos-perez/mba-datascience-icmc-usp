@@ -1,4 +1,4 @@
-# Twitter Data Pipeline
+# Twitter Data Lake
 
 ![aws-lambda](https://img.shields.io/badge/aws-lambda-green)
 ![aws-s3](https://img.shields.io/badge/aws-s3-yellow)

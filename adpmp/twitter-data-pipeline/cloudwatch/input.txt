@@ -1,0 +1,4 @@
+# CloudWatch execution timestamp
+# See: https://docs.aws.amazon.com/lambda/latest/dg/services-cloudwatchevents.html
+
+$.time
